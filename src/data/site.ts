@@ -3,6 +3,7 @@ export const profile = {
   firstName: "Minhaj",
   role: "CS undergraduate · Aspiring software engineer",
   email: "minhajmilfer6@gmail.com",
+  website: "https://minhajmilfer.github.io/minhaj-website/",
   linkedin: "https://www.linkedin.com/in/minhajmilfer",
   github: "https://github.com/minhajmilfer",
   tagline: "Building with Python, the web & Android",

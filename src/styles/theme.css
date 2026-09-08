@@ -1,0 +1,87 @@
+.font-display {
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+.font-body {
+  font-family: "wf_2e9eb9e087dc46f5af6389e9d", ui-sans-serif, system-ui,
+    sans-serif;
+}
+.font-script {
+  font-family: "wf_112edd56b1874b92895b605c1", ui-sans-serif, system-ui,
+    sans-serif;
+}
+
+@keyframes shineSweep {
+  0% {
+    transform: translateX(-130%) skewX(-18deg);
+  }
+  55%,
+  100% {
+    transform: translateX(230%) skewX(-18deg);
+  }
+}
+.shine-sweep {
+  position: relative;
+  overflow: hidden;
+}
+.shine-sweep::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  animation: shineSweep 4.5s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.logo-chip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 76px;
+  width: 128px;
+  padding: 12px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+.logo-chip img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+.logo-chip-sm {
+  height: 48px;
+  width: 84px;
+  padding: 8px;
+  border-radius: 12px;
+}
+
+.journey-node {
+  height: 15px;
+  width: 15px;
+  border-radius: 9999px;
+  background: #0a0a0a;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.22);
+}
+.journey-node-now {
+  border-color: rgba(110, 231, 183, 0.9);
+}
+.journey-node-next {
+  border-color: rgba(147, 197, 253, 0.9);
+  box-shadow: 0 0 14px rgba(147, 197, 253, 0.4);
+}
+
+.journey-pulse-dot {
+  height: 6px;
+  width: 6px;
+  border-radius: 9999px;
+  background: rgb(110, 231, 183);
+}
